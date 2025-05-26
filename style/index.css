@@ -1,0 +1,250 @@
+/* index.css */
+body * {transition: all 0.5s;}
+main {background-color: #000; color: #fff;}
+/* ----------------------1행 : s */
+main .melon_video{
+    text-align: center;
+    position: relative;
+}
+main .melon_video .bg_video{} 
+main .melon_video .bg_video video{
+    width: 100%; height: 100vh; 
+    object-fit: cover;/* 백그라운드포지션과 비슷한 역활:검색 */
+} 
+main .melon_video .container{
+    padding: 80px 0;
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%; margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between
+
+} 
+main .melon_video .container h1{} 
+main .melon_video .container h1 a{} 
+main .melon_video .container h1 a img{} 
+main .melon_video .container .moving_box{
+    position: relative;
+    background: linear-gradient(#21F55F,#00CD3C);
+    border-radius: 100px;
+    max-width:650px; min-width: 320px;
+    display: flex;
+} 
+main .melon_video .container .moving_box a{
+    display: flex; align-items: center; 
+    width: 100%; 
+    border-radius: 100px; 
+    padding: 10px 40px;
+} 
+main .melon_video .container .moving_box>a:nth-child(2){}
+main .melon_video .container .moving_box>a:nth-child(2)::before{
+    content: ''; position: absolute; top: 15%; left: 50%; width: 1px; height: 70%; background-color: #fff;
+}
+main .melon_video .container .moving_box a span{
+    white-space : nowrap; /* 줄바꿈 없애기:검색 */
+    font-size: 1.563rem;
+    color: #fff;
+} 
+main .melon_video .container .moving_box a span img{
+    width: 50px;
+    margin-right: 10px;
+} 
+main .melon_video .container .moving_box>a:nth-child(2) span img{width: 45px;}
+/* ----------------------1행 : e */
+/* ----------------------2행 : s */
+main .quiz {
+    background:url(../image/01_guiz/bg1.jpg) no-repeat center / cover;
+    padding: 211.5px 360px;
+}
+main .quiz .container {}
+main .quiz .container .quiz_top {
+    max-width: 1200px; min-width: 320px; 
+    display: flex; justify-content:space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+main .quiz .container .quiz_top h2{}
+main .quiz .container .quiz_top h2 img{}
+main .quiz .container .quiz_top .quiz_top_text{text-align: center; }
+main .quiz .container .quiz_top .quiz_top_text p{
+    color: #fff; margin-bottom: 10px;
+    font-size: 1.875rem; font-weight: 600;
+}
+main .quiz .container .quiz_top .quiz_top_text p:nth-child(2){
+    font-size: 3.125rem; font-weight: 600; color: #FF94E8;
+}
+main .quiz .container .quiz_bottom {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* display: flex; flex-flow: row nowrap; */
+}
+main .quiz .container .quiz_bottom #left_quiz{
+    margin-right: 60px; 
+    display: flex; align-items: center;
+    flex-flow: column wrap;
+}
+main .quiz .container .quiz_bottom #left_quiz p{
+    font-size: 1.375rem; line-height: 1.5; color: #fff;
+    margin-bottom: 20px;
+}
+main .quiz .container .quiz_bottom #left_quiz .hint{
+    display: grid;
+    grid-template-areas:
+    'hint_h hint_h hint_h'
+    'hint_p hint_t hint_a';
+    grid-template-columns: 80px 80px 80px;
+    grid-gap:30px;
+    margin-bottom: 20px;
+}
+main .quiz .container .quiz_bottom #left_quiz .hint h3{ color: #fff; text-align: center; grid-area:hint_h;}
+main .quiz .container .quiz_bottom #left_quiz .hint p{}
+main .quiz .container .quiz_bottom #left_quiz .hint p:nth-child(1){grid-area:hint_a;}
+main .quiz .container .quiz_bottom #left_quiz .hint p:nth-child(2){grid-area:hint_p;}
+main .quiz .container .quiz_bottom #left_quiz .hint p:nth-child(3){grid-area:hint_t;}
+main .quiz .container .quiz_bottom #left_quiz .hint p img{}
+main .quiz .container .quiz_bottom #left_quiz .quiz_ex{
+    display: flex;
+    justify-content: space-between;
+}
+main .quiz .container .quiz_bottom #left_quiz .quiz_ex label{margin: 0 20px;}
+main .quiz .container .quiz_bottom #left_quiz .quiz_ex label input{}
+main .quiz .container .quiz_bottom #left_quiz .quiz_ex label input[name=quiz]{display: none;}
+main .quiz .container .quiz_bottom #left_quiz .quiz_ex label input[name=quiz]:checked + span {background-image:url(../image/01_guiz/check_icon_on.png);}
+main .quiz .container .quiz_bottom #left_quiz .quiz_ex label input[name=quiz] + span{
+    background-image:url(../image/01_guiz/check_icon_off.png);
+    background-repeat: no-repeat; color: #fff;
+    padding: 35px 0 0 0;
+}
+main .quiz .container .quiz_bottom #left_quiz .quiz_ex label:nth-child(2) input[name=quiz] + span{background-position-x: 5px;}
+main .quiz .container .quiz_bottom #left_quiz .quiz_ex label:nth-child(4) input[name=quiz] + span{background-position-x: 15px;}
+main .quiz .container .quiz_bottom #left_quiz .quiz_ex label input span{}
+main .quiz .container .quiz_bottom #left_quiz #answer_btn{
+    /* max-width: 450px; min-width: 320px; */ border-radius: 50px; 
+    background: linear-gradient(#21F55F,#00CD3C);
+    width: 100%;
+    padding: 10px 0; margin-top: 20px;
+
+}
+main .quiz .container .quiz_bottom .quiz_video{
+    display: flex;
+    flex-flow: column nowrap;
+}
+main .quiz .container .quiz_bottom .quiz_video video{width: 100%;}
+main .quiz .container .quiz_bottom .quiz_video p{
+    color: #fff; margin-top: 15px; text-align: right;}
+/* ----------------------2행 : e */
+/* ----------------------3행 : s */
+main .start{
+    background:url(../image/02_start/bg2.png) no-repeat center / cover;
+    padding: 185px 0 0;
+    text-align:center;
+}
+main .start .start_text{}
+main .start .start_text h2{
+    color: #fff;
+    font-size: 3.75rem;
+    margin-bottom: 30px;
+    /* white-space : nowrap; */ /* 줄바꿈 없애기:검색 */
+}
+main .start .start_text p{
+    color: #fff;
+    font-size: 2.5rem;
+    white-space : nowrap; /* 줄바꿈 없애기:검색 */
+}
+main .start .phone_img{
+    position: relative;
+    bottom: 0; left: 50%; transform: translateX(-50%);
+    padding-top: 170px;
+    max-width: 700px; min-width: 320px;
+}
+main .start .phone_img img{ width: 100%;}
+/* ----------------------3행 : e */
+/* ----------------------4행 : s */
+main .good {
+    background:url(../image/03_good/bg3.jpg) no-repeat center / cover;
+    padding: 155px 0;
+}
+main .good .container{
+    max-width: 1200px; min-width: 320px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+   /*  display: flex; flex-flow:row nowrap; */
+}
+main .good .container .good_img{
+    margin-right: 50px; 
+    width: 100%;
+}
+main .good .container .good_img img{width: 100%;}
+main .good .container .good_text{}
+main .good .container .good_text h2{width: 100%;}
+main .good .container .good_text h2 img{width: 100%;}
+main .good .container .good_text>p{
+    color: #fff; font-size: 2.5rem; font-weight: 600;
+    /* white-space : nowrap; */ /* 줄바꿈 없애기:검색 */
+    margin: 37px 0;
+    line-height: 1.2; letter-spacing:-0.02em; 
+}
+main .good .container .good_text .good_giveaway{}
+main .good .container .good_text .good_giveaway p{
+    text-align: center;
+    font-size: 1.375rem; color: #fff; margin-bottom: 10px;
+}
+main .good .container .good_text .good_giveaway .giveaway_text{
+    display: flex; flex-flow:row nowrap;
+    justify-content: center;
+}
+main .good .container .good_text .good_giveaway .giveaway_text li{
+    display: flex; flex-flow:column nowrap; width: 100px;
+    text-align: center;
+}
+main .good .container .good_text .good_giveaway .giveaway_text li:nth-child(2){margin: 0 10px;}
+main .good .container .good_text .good_giveaway .giveaway_text li img{margin-bottom: 10px;}
+main .good .container .good_text .good_giveaway .giveaway_text li em{color: #fff;}
+main .good .container .good_text .good_giveaway .giveaway_text li span{
+    line-height: 1.2; letter-spacing:-0.02em; font-size: 0.95rem; color: #fff;
+}
+/* ----------------------4행 : e */
+/* ----------------------5행 : s */
+main .tag{
+    background:url(../image/04_melon/bg4.jpg) no-repeat center / cover;
+    padding: 210px 0;
+}
+main .tag .container{
+    max-width: 1200px; min-width: 320px;
+    margin: 0 auto;
+}
+main .tag .container .position_box{
+    background:url(../image/04_melon/melon_h_text.png) no-repeat center / cover;
+    max-width: 1200px; min-width: 320px;
+    height: 300px;
+    margin-bottom: 100px;
+    position: relative; 
+}
+main .tag .container .position_box p {position: absolute; top: 0;}
+main .tag .container .position_box p:nth-child(1) {left: 0;}
+main .tag .container .position_box p:nth-child(2) {right: 0;}
+main .tag .container .tag_img {}
+main .tag .container .tag_img img{width: 100%;}
+/* ----------------------5행 : e */
+/* ----------------------footer : s */
+footer {
+    background-color: #253F1C;
+    padding: 30px 0;
+}
+footer .footer_text{
+    max-width: 1200px; min-width: 320px; 
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+footer .footer_text address{}
+footer .footer_text address * {color: #04E532;margin: 10px 0;font-weight: 200;}
+footer .footer_text address p{}
+footer .footer_text address p a{}
+footer .footer_text h2{}
+footer .footer_text h2 img{width: 100%;}
+
+/* ----------------------footer : e */

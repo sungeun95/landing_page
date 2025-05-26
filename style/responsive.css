@@ -1,0 +1,115 @@
+
+@media screen and (max-width:1199px){
+/* ====================== 1행 T : s 1199~850*/
+/* main .melon_video .bg_video video{height: 100%;}  */
+main .melon_video .bg_video video{width: 100%; height:625px;}
+main .melon_video{height: 100%;}
+main .melon_video .container{padding: 50px 0;}
+/* ====================== 1행 T : e */
+/* ====================== 2행 T : s */
+main .quiz {padding: 197.5px 80px;}
+main .quiz .container .quiz_top{margin-bottom: 50px;}
+main .quiz .container .quiz_top h2 img{width: 400px;}
+main .quiz .container .quiz_bottom #left_quiz p{font-size: 1rem; margin-bottom: 15px;}
+main .quiz .container .quiz_bottom .quiz_video p{font-size: 0.625rem;}
+/* ====================== 2행 T : e */
+/* ====================== 3행 T : s */
+main .start{padding: 140px 80px 0;}
+main .start .start_text h2{font-size: 2.813rem;}
+main .start .start_text p{font-size: 1.875rem;}
+main .start .phone_img{padding-top: 145px;}
+/* ====================== 3행 T : e */
+/* ====================== 4행 T : s */
+main .good{padding: 100px 80px;}
+main .good .container .good_img{margin-right: 20px;}
+main .good .container .good_text>p{font-size: 1.875rem;}
+main .good .container .good_text .good_giveaway p{font-size: 1rem;}
+/* ====================== 4행 T : e */
+/* ====================== 5행 T : s */
+main .tag{padding: 172px 80px;}
+/* ====================== 5행 T : e */
+/* ====================== footer : s  */
+footer {padding: 30px 80px;}
+footer .footer_text address * {font-size: 1rem; margin: 6px 0;}
+/* ====================== footer : e  */
+}
+
+@media screen and (max-width:849px){
+main {overflow-x: hidden;}
+/* ====================== 1행 M : s 849~430*/
+main .melon_video .container{padding: 10px 0;}
+main .melon_video .bg_video video{width: 100%; height:200px;}
+main .melon_video .container h1 a img{width: 100px;}
+main .melon_video .container .moving_box{max-width:278px;}
+main .melon_video .container .moving_box a { padding: 5px 20px;}
+main .melon_video .container .moving_box a span{font-size: 0.75rem;}
+main .melon_video .container .moving_box a span img{width: 25px;}
+main .melon_video .container .moving_box>a:nth-child(2) span img{width: 25px;}
+/* ====================== 1행 M : e */
+/* ====================== 2행 M : s */
+main .quiz {padding: 50px 15px;}
+main .quiz .container .quiz_top{margin-bottom: 50px;}
+main .quiz .container .quiz_top h2 img{width: 200px;}
+main .quiz .container .quiz_top .quiz_top_text p{display: none;}
+main .quiz .container .quiz_bottom{display: block; width: 100%; margin:0 auto;}
+main .quiz .container .quiz_bottom #left_quiz { width: 100%;}
+main .quiz .container .quiz_bottom #left_quiz p{margin-bottom: 50px; text-align: left; }
+main .quiz .container .quiz_bottom #left_quiz .hint{grid-gap:10px;}
+main .quiz .container .quiz_bottom #left_quiz .quiz_ex label{margin: 0 10px;}
+main .quiz .container .quiz_bottom #left_quiz #answer_btn{
+    margin-bottom: 50px;
+}
+main .quiz .container .quiz_bottom .quiz_video p{text-align: center;}
+/* ====================== 2행 M : e */
+/* ====================== 3행 M : s */
+main .start{padding: 100px 15px 0;}
+main .start .start_text h2{font-size: 1.375rem;margin-bottom: 20px;}
+main .start .start_text p{font-size: 1rem; white-space : wrap;}
+main .start .phone_img{padding-top: 150px;}
+main .start .phone_img img{width: 300px;}
+/* ====================== 3행 M : e */
+/* ====================== 4행 M : s */
+main .good{padding: 30px 10px; text-align: center;}
+main .good .container{display: block;}
+main .good .container .good_img{
+    margin:0 auto 30px;
+    width: 234px;
+}
+main .good .container .good_text h2{
+    width: 300px;
+    margin: 0 auto; 
+}
+main .good .container .good_text>p{
+    font-size: 1.175rem;
+    white-space : wrap; /* 줄바꿈 없애기:검색 */
+}
+main .good .container .good_text .good_giveaway p{
+    font-size: 1rem;
+    white-space : wrap;
+}
+main .good .container .good_text .good_giveaway .giveaway_text li{width: 80px;}
+/* ====================== 4행 M : e */
+/* ====================== 5행 T : s */
+main .tag{padding: 30px 15px;}
+main .tag .container .position_box{
+    background:url(../image/04_melon/melon_h_text.png) no-repeat center / contain;
+    margin-bottom: 50px; height: 100px;
+}
+main .tag .container .position_box p{display: none;}
+/* ====================== 5행 T : e */
+/* ====================== footer : s  */
+footer {padding: 30px 15px;}
+footer .footer_text{
+    flex-flow: column nowrap;
+    align-items: start;
+    width: 100%;
+}
+footer .footer_text address {margin-bottom: 10px;}
+footer .footer_text address * {font-size: 0.5rem; margin: 5px 0;}
+footer .footer_text h2{
+    display: block; width: 100%;
+    text-align: right;
+}
+footer .footer_text h2 img{width: 150px;}
+/* ====================== footer : e  */
+}

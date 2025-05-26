@@ -1,0 +1,27 @@
+/* reset.css */
+/* 모든 태그들에 대한 공통 초기값 세팅 */
+html,body,h1,h2,h3,h4,h5,h6,
+dl,dt,dd,ol,ul,li,p,blockquote,hr,div,video,address,
+header,footer,nav,aside,article,section,figure,figcaption,main,details,summary,
+form,fieldset,legend,input,button,select,object,textarea,
+em,strong,sub,sup,br,span,del,code,s,q,mark,img,a,
+table,thead,tbody,tfoot,tr,td,th{
+    margin: 0; padding: 0; box-sizing: border-box;/* 객체에서 기본값에 패딩 값을 제외하고 계산하겠다. */
+    line-height: 1;
+    letter-spacing: -0.02em;
+    word-spacing: 0;
+    font-size: 1em;
+    font-weight: 400;
+    color: #000;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+}
+/* 개별 태그 초기값 */
+a {text-decoration: none;} /* 밑줄 없애기 */
+ul,ol,li {list-style: none;} /* 숫자, 점 없애기 */
+fieldset {border: 0;} /* 선없애기 */
+legend {display: none;} /* 숨긴다. */
+input {border:0; outline: none;} /* 선없애기+선택시 선없애기 */
+button {border: 0; background:none; cursor: pointer;}/* 선 없애기, 배경색 없애기, 마우스 커서 모양 바꾸기 */ 
+table,tr,td,th {border-collapse:collapse;} /* 이중선 없애기 */
+select, optgroup {border: 0; appearance: none;}
