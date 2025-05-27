@@ -1,6 +1,6 @@
 /* index.css */
 body * {transition: all 0.5s;}
-main {background-color: #000; color: #fff;}
+main {background-color: #000;}
 /* ----------------------1행 : s */
 main .melon_video{
     text-align: center;
@@ -33,24 +33,48 @@ main .melon_video .container .moving_box{
 } 
 main .melon_video .container .moving_box a{
     display: flex; align-items: center; 
-    width: 100%; 
-    border-radius: 100px; 
+    width: 50%; 
+    /* border-radius: 100px;  */
     padding: 10px 40px;
 } 
-main .melon_video .container .moving_box>a:nth-child(2){}
+main .melon_video .container .moving_box a::after{
+    content: ''; position: absolute; top: 0; left: 50%; 
+    width: 0; height: 100%;
+    border-radius: 0 100px 100px 0 ;
+    background-color: #00b637;
+    transition: width 0.3s;
+    z-index: 9;
+}
+main .melon_video .container .moving_box a:nth-child(2):hover::after{width: 50%;}
+main .melon_video .container .moving_box a::before{
+     content: ''; position: absolute; top: 0; right: 50%; 
+    width: 0; height: 100%;
+    border-radius: 100px 0 0 100px ;
+    background-color: #00b637;
+    transition: width 0.3s;
+    z-index: 9;
+}
+main .melon_video .container .moving_box a:nth-child(1):hover::before{width: 50%;}
+main .melon_video .container .moving_box a:hover{
+}
+main .melon_video .container .moving_box>a:nth-child(1){}
+main .melon_video .container .moving_box>a:nth-child(2){
+}
 main .melon_video .container .moving_box>a:nth-child(2)::before{
-    content: ''; position: absolute; top: 15%; left: 50%; width: 1px; height: 70%; background-color: #fff;
+    content: ''; position: absolute; top: 15%; left: 50%; transform: translateX(-50%);
+    width: 1px; height: 70%; background-color: #fff;
 }
 main .melon_video .container .moving_box a span{
-    white-space : nowrap; /* 줄바꿈 없애기:검색 */
-    font-size: 1.563rem;
+    white-space : nowrap;
+    font-size: 1.2rem;
+    font-weight: 700;
     color: #fff;
+    z-index: 10;
 } 
 main .melon_video .container .moving_box a span img{
-    width: 50px;
+    width: 30px;
     margin-right: 10px;
 } 
-main .melon_video .container .moving_box>a:nth-child(2) span img{width: 45px;}
 /* ----------------------1행 : e */
 /* ----------------------2행 : s */
 main .quiz {
@@ -93,16 +117,22 @@ main .quiz .container .quiz_bottom #left_quiz .hint{
     grid-template-areas:
     'hint_h hint_h hint_h'
     'hint_p hint_t hint_a';
-    grid-template-columns: 80px 80px 80px;
-    grid-gap:30px;
-    margin-bottom: 20px;
+    grid-template-columns: 60px 60px 60px;
+    grid-gap:15px;
+    margin-bottom: 50px;
 }
 main .quiz .container .quiz_bottom #left_quiz .hint h3{ color: #fff; text-align: center; grid-area:hint_h;}
-main .quiz .container .quiz_bottom #left_quiz .hint p{}
+main .quiz .container .quiz_bottom #left_quiz .hint>p{
+    animation: hint_a 1s linear infinite alternate;
+}
+@keyframes hint_a {
+    0% {transform: rotate(5deg);}
+    100% {transform: rotate(-5deg);}
+}
 main .quiz .container .quiz_bottom #left_quiz .hint p:nth-child(1){grid-area:hint_a;}
 main .quiz .container .quiz_bottom #left_quiz .hint p:nth-child(2){grid-area:hint_p;}
 main .quiz .container .quiz_bottom #left_quiz .hint p:nth-child(3){grid-area:hint_t;}
-main .quiz .container .quiz_bottom #left_quiz .hint p img{}
+main .quiz .container .quiz_bottom #left_quiz .hint p img{width: 100%;}
 main .quiz .container .quiz_bottom #left_quiz .quiz_ex{
     display: flex;
     justify-content: space-between;
@@ -112,6 +142,7 @@ main .quiz .container .quiz_bottom #left_quiz .quiz_ex label input{}
 main .quiz .container .quiz_bottom #left_quiz .quiz_ex label input[name=quiz]{display: none;}
 main .quiz .container .quiz_bottom #left_quiz .quiz_ex label input[name=quiz]:checked + span {background-image:url(../image/01_guiz/check_icon_on.png);}
 main .quiz .container .quiz_bottom #left_quiz .quiz_ex label input[name=quiz] + span{
+    transform: background-image 0.1s ;
     background-image:url(../image/01_guiz/check_icon_off.png);
     background-repeat: no-repeat; color: #fff;
     padding: 35px 0 0 0;
@@ -120,11 +151,30 @@ main .quiz .container .quiz_bottom #left_quiz .quiz_ex label:nth-child(2) input[
 main .quiz .container .quiz_bottom #left_quiz .quiz_ex label:nth-child(4) input[name=quiz] + span{background-position-x: 15px;}
 main .quiz .container .quiz_bottom #left_quiz .quiz_ex label input span{}
 main .quiz .container .quiz_bottom #left_quiz #answer_btn{
-    /* max-width: 450px; min-width: 320px; */ border-radius: 50px; 
-    background: linear-gradient(#21F55F,#00CD3C);
-    width: 100%;
-    padding: 10px 0; margin-top: 20px;
-
+    border-radius: 50px; 
+    background: #00CD3C;
+    width: 100%; padding: 10px 0; margin-top: 20px;
+    position: relative; top: 0; left: 0; 
+    z-index: 10;
+}
+main .quiz .container .quiz_bottom #left_quiz #answer_btn::after{
+    content: ''; position: absolute; top: 0; left: 0; 
+    border-radius: 50px; 
+    width: 100%; height: 100%;
+    background-color: rgba(0, 131, 39, 0);
+    /* background-color: rgba(0,205,60,0.6); */
+    transform-origin:center;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+    z-index: 9;
+}
+main .quiz .container .quiz_bottom #left_quiz #answer_btn:hover:after{
+    transform: scaleX(1);
+    background-color: #21F55F;
+}
+main .quiz .container .quiz_bottom #left_quiz #answer_btn span{
+    position: relative; z-index: 10;
+    font-weight: 700;
 }
 main .quiz .container .quiz_bottom .quiz_video{
     display: flex;
@@ -145,8 +195,10 @@ main .start .start_text h2{
     color: #fff;
     font-size: 2.75rem;
     margin-bottom: 30px;
+    animation: tf_t 1s forwards;
     /* white-space : nowrap; */ /* 줄바꿈 없애기:검색 */
 }
+
 main .start .start_text p{
     color: #fff;
     font-size: 1.5rem;
@@ -176,10 +228,13 @@ main .good .container{
 main .good .container .good_img{
     margin-right: 50px; 
     width: 100%;
+    animation: hint_a 3s linear infinite alternate;
 }
 main .good .container .good_img img{width: 100%;}
 main .good .container .good_text{}
-main .good .container .good_text h2{width: 100%;}
+main .good .container .good_text h2{
+    width: 100%;
+}
 main .good .container .good_text h2 img{width: 100%;}
 main .good .container .good_text>p{
     color: #fff; font-size: 2rem; font-weight: 600;
@@ -190,7 +245,7 @@ main .good .container .good_text>p{
 main .good .container .good_text .good_giveaway{}
 main .good .container .good_text .good_giveaway p{
     text-align: center;
-    color: #fff; margin-bottom: 20px;
+    color: #fff; margin-bottom: 40px;
 }
 main .good .container .good_text .good_giveaway .giveaway_text{
     display: flex; flex-flow:row nowrap;
@@ -200,7 +255,7 @@ main .good .container .good_text .good_giveaway .giveaway_text li{
     display: flex; flex-flow:column nowrap; width: 100px;
     text-align: center;
 }
-main .good .container .good_text .good_giveaway .giveaway_text li:nth-child(2){margin: 0 10px;}
+main .good .container .good_text .good_giveaway .giveaway_text li:nth-child(2){margin: 0 25px;}
 main .good .container .good_text .good_giveaway .giveaway_text li img{margin-bottom: 10px;}
 main .good .container .good_text .good_giveaway .giveaway_text li em{color: #fff;}
 main .good .container .good_text .good_giveaway .giveaway_text li span{
