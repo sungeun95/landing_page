@@ -169,7 +169,8 @@ main .good .container{
     max-width: 1200px; min-width: 320px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 45%;
+    gap: 5%;
    /*  display: flex; flex-flow:row nowrap; */
 }
 main .good .container .good_img{
@@ -182,14 +183,14 @@ main .good .container .good_text h2{width: 100%;}
 main .good .container .good_text h2 img{width: 100%;}
 main .good .container .good_text>p{
     color: #fff; font-size: 2rem; font-weight: 600;
-    /* white-space : nowrap; */ /* 줄바꿈 없애기:검색 */
+    /* white-space : nowrap; */
     margin: 37px 0;
     line-height: 1.2; letter-spacing:-0.02em; 
 }
 main .good .container .good_text .good_giveaway{}
 main .good .container .good_text .good_giveaway p{
     text-align: center;
-    font-size: 1.375rem; color: #fff; margin-bottom: 10px;
+    color: #fff; margin-bottom: 20px;
 }
 main .good .container .good_text .good_giveaway .giveaway_text{
     display: flex; flex-flow:row nowrap;
