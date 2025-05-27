@@ -85,7 +85,7 @@ main .quiz .container .quiz_bottom #left_quiz{
     flex-flow: column wrap;
 }
 main .quiz .container .quiz_bottom #left_quiz p{
-    font-size: 1.375rem; line-height: 1.5; color: #fff;
+    font-size: 1.25rem; line-height: 1.5; color: #fff;
     margin-bottom: 20px;
 }
 main .quiz .container .quiz_bottom #left_quiz .hint{
