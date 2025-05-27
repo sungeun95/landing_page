@@ -54,7 +54,7 @@ main .melon_video .container .moving_box>a:nth-child(2) span img{width: 45px;}
 /* ----------------------1행 : e */
 /* ----------------------2행 : s */
 main .quiz {
-    background:url(../image/01_guiz/bg1.jpg) no-repeat center / cover;
+    background:url(../image/01_guiz/bg1.jpg) no-repeat fixed center / cover;
     padding: 211.5px 360px;
 }
 main .quiz .container {}
@@ -85,7 +85,7 @@ main .quiz .container .quiz_bottom #left_quiz{
     flex-flow: column wrap;
 }
 main .quiz .container .quiz_bottom #left_quiz p{
-    font-size: 1.25rem; line-height: 1.5; color: #fff;
+    /* font-size: 1.25em; */ line-height: 1.5; letter-spacing:-0.02; color: #fff;
     margin-bottom: 20px;
 }
 main .quiz .container .quiz_bottom #left_quiz .hint{
@@ -143,13 +143,13 @@ main .start{
 main .start .start_text{}
 main .start .start_text h2{
     color: #fff;
-    font-size: 3.75rem;
+    font-size: 2.75rem;
     margin-bottom: 30px;
     /* white-space : nowrap; */ /* 줄바꿈 없애기:검색 */
 }
 main .start .start_text p{
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     white-space : nowrap; /* 줄바꿈 없애기:검색 */
 }
 main .start .phone_img{
@@ -181,7 +181,7 @@ main .good .container .good_text{}
 main .good .container .good_text h2{width: 100%;}
 main .good .container .good_text h2 img{width: 100%;}
 main .good .container .good_text>p{
-    color: #fff; font-size: 2.5rem; font-weight: 600;
+    color: #fff; font-size: 2rem; font-weight: 600;
     /* white-space : nowrap; */ /* 줄바꿈 없애기:검색 */
     margin: 37px 0;
     line-height: 1.2; letter-spacing:-0.02em; 
