@@ -47,7 +47,7 @@ main .melon_video .container .moving_box a::after{
 }
 main .melon_video .container .moving_box a:nth-child(2):hover::after{width: 50%;}
 main .melon_video .container .moving_box a::before{
-     content: ''; position: absolute; top: 0; right: 50%; 
+    content: ''; position: absolute; top: 0; right: 50%; 
     width: 0; height: 100%;
     border-radius: 100px 0 0 100px ;
     background-color: #00b637;
@@ -137,7 +137,7 @@ main .quiz .container .quiz_bottom #left_quiz .quiz_ex{
     display: flex;
     justify-content: space-between;
 }
-main .quiz .container .quiz_bottom #left_quiz .quiz_ex label{margin: 0 20px;}
+main .quiz .container .quiz_bottom #left_quiz .quiz_ex label{margin: 0 10px;}
 main .quiz .container .quiz_bottom #left_quiz .quiz_ex label input{}
 main .quiz .container .quiz_bottom #left_quiz .quiz_ex label input[name=quiz]{display: none;}
 main .quiz .container .quiz_bottom #left_quiz .quiz_ex label input[name=quiz]:checked + span {background-image:url(../image/01_guiz/check_icon_on.png);}

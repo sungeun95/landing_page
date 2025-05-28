@@ -12,6 +12,7 @@ main .quiz .container .quiz_top{margin-bottom: 50px;}
 main .quiz .container .quiz_top h2 img{width: 400px;}
 main .quiz .container .quiz_bottom #left_quiz p{font-size: 1rem; margin-bottom: 15px;}
 main .quiz .container .quiz_bottom .quiz_video p{font-size: 0.625rem;}
+
 /* ====================== 2행 T : e */
 /* ====================== 3행 T : s */
 main .start{padding: 140px 80px 0;}
@@ -34,7 +35,7 @@ footer .footer_text address * {font-size: 1rem; margin: 6px 0;}
 /* ====================== footer : e  */
 }
 
-@media screen and (max-width:849px){
+@media screen and (max-width:699px){
 main {overflow-x: hidden;}
 /* ====================== 1행 M : s 849~430*/
 main .melon_video .container{padding: 10px 0;}
@@ -55,7 +56,6 @@ main .quiz .container .quiz_bottom{display: block; width: 100%; margin:0 auto;}
 main .quiz .container .quiz_bottom #left_quiz { width: 100%;}
 main .quiz .container .quiz_bottom #left_quiz p{margin-bottom: 50px; text-align: left; }
 main .quiz .container .quiz_bottom #left_quiz .hint{grid-gap:10px;}
-main .quiz .container .quiz_bottom #left_quiz .quiz_ex label{margin: 0 10px;}
 main .quiz .container .quiz_bottom #left_quiz #answer_btn{
     margin-bottom: 50px;
 }
