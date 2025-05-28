@@ -28,6 +28,7 @@ main .good .container .good_text .good_giveaway p{font-size: 1rem;}
 /* ====================== 4행 T : e */
 /* ====================== 5행 T : s */
 main .tag{padding: 172px 80px;}
+main .tag .container .position_box p img{width: 250px;}
 /* ====================== 5행 T : e */
 /* ====================== footer : s  */
 footer {padding: 30px 80px;}
