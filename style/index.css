@@ -125,10 +125,6 @@ main .quiz .container .quiz_bottom #left_quiz .hint h3{ color: #fff; text-align:
 main .quiz .container .quiz_bottom #left_quiz .hint>p{
     animation: hint_a 1s linear infinite alternate;
 }
-@keyframes hint_a {
-    0% {transform: rotate(5deg);}
-    100% {transform: rotate(-5deg);}
-}
 main .quiz .container .quiz_bottom #left_quiz .hint p:nth-child(1){grid-area:hint_a;}
 main .quiz .container .quiz_bottom #left_quiz .hint p:nth-child(2){grid-area:hint_p;}
 main .quiz .container .quiz_bottom #left_quiz .hint p:nth-child(3){grid-area:hint_t;}
@@ -302,5 +298,9 @@ footer .footer_text address p{}
 footer .footer_text address p a{}
 footer .footer_text h2{}
 footer .footer_text h2 img{width: 100%;}
-
 /* ----------------------footer : e */
+/* ========================에니메이션 */
+@keyframes hint_a {
+    0% {transform: rotate(5deg);}
+    100% {transform: rotate(-5deg);}
+}
