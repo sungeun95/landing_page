@@ -165,7 +165,7 @@ main .quiz .container .quiz_bottom #left_quiz #answer_btn::after{
     /* background-color: rgba(0,205,60,0.6); */
     transform-origin:center;
     transform: scaleX(0);
-    transition: transform 0.5s;
+    transition: all 0.5s;
     z-index: 9;
 }
 main .quiz .container .quiz_bottom #left_quiz #answer_btn:hover:after{
